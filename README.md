@@ -1,7 +1,7 @@
-# WebTimeTracker - Chrome Productivity Extension
+# CHROME-EXTENSION-FOR-TIME-TRACKING-AND-PRODUCTIVITY-ANALYTICS
 
 ## Overview
-WebTimeTracker is a Chrome extension that helps users monitor and analyze their web browsing habits. The extension tracks time spent on different websites, categorizes them as productive or unproductive, and provides detailed productivity analytics through an intuitive dashboard.
+My project is a Chrome extension that helps users monitor and analyze their web browsing habits. The extension tracks time spent on different websites, categorizes them as productive or unproductive, and provides detailed productivity analytics through an intuitive dashboard.
 
 ## Features
 
@@ -27,25 +27,11 @@ WebTimeTracker is a Chrome extension that helps users monitor and analyze their 
 - **Data Export**: Export your analytics data in CSV format
 - **Privacy Controls**: All data stays on your local machine by default with optional cloud sync
 
-## Installation
 
-### From Chrome Web Store
-1. Navigate to the [Chrome Web Store](https://chrome.google.com/webstore)
-2. Search for "WebTimeTracker"
-3. Click "Add to Chrome"
 
-### Manual Installation (Developer Mode)
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top-right corner
-4. Click "Load unpacked" and select the extension directory
 
-## Usage
 
-### Getting Started
-1. After installation, click on the WebTimeTracker icon in your Chrome toolbar
-2. Go through the initial setup to configure your preferences
-3. The extension will immediately begin tracking your browsing activity
+
 
 ### Viewing Analytics
 1. Click the extension icon to see a quick summary
@@ -79,10 +65,10 @@ WebTimeTracker is a Chrome extension that helps users monitor and analyze their 
 ### Setup Development Environment
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/web-time-tracker.git
+git clone https://github.com/yourusername/CHROME-EXTENSION-FOR-TIME-TRACKING-AND-PRODUCTIVITY-ANALYTICS.git
 
 # Navigate to directory
-cd web-time-tracker
+cd CHROME-EXTENSION-FOR-TIME-TRACKING-AND-PRODUCTIVITY-ANALYTICS
 
 # Install dependencies
 npm install
@@ -93,7 +79,7 @@ npm run dev
 
 ### Project Structure
 ```
-web-time-tracker/
+CHROME-EXTENSION-FOR-TIME-TRACKING-AND-PRODUCTIVITY-ANALYTICS/
 ├── src/                  # Source files
 │   ├── background/       # Chrome background scripts
 │   ├── components/       # React components
@@ -104,11 +90,4 @@ web-time-tracker/
 └── manifest.json         # Extension manifest
 ```
 
-## Contributing
-We welcome contributions to WebTimeTracker! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-For support, feature requests, or bug reports, please open an issue on our [GitHub repository](https://github.com/yourusername/web-time-tracker/issues) or contact support@webtimetracker.com.
