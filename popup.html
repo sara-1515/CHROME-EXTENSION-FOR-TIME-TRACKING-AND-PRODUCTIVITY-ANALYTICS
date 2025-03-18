@@ -1,0 +1,54 @@
+// popup.html - Extension popup UI
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Productivity Tracker</h1>
+  </header>
+  
+  <div class="today-summary">
+    <h2>Today's Stats</h2>
+    <div class="stats-container">
+      <div class="stat">
+        <div class="stat-value" id="productive-time">--:--</div>
+        <div class="stat-label">Productive</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="unproductive-time">--:--</div>
+        <div class="stat-label">Unproductive</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="total-time">--:--</div>
+        <div class="stat-label">Total</div>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-segment productive" id="productive-bar"></div>
+        <div class="progress-segment neutral" id="neutral-bar"></div>
+        <div class="progress-segment unproductive" id="unproductive-bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="top-sites">
+    <h2>Top Sites Today</h2>
+    <ul id="sites-list">
+      <!-- Will be populated by JavaScript -->
+    </ul>
+  </div>
+  
+  <div class="actions">
+    <button id="dashboard-btn">Open Dashboard</button>
+    <button id="settings-btn">Settings</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

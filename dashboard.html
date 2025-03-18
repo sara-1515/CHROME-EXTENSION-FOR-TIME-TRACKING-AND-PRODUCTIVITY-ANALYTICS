@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Analytics Dashboard</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Productivity Analytics Dashboard</h1>
+      <div class="time-range">
+        <select id="time-range-select">
+          <option value="today">Today</option>
+          <option value="yesterday">Yesterday</option>
+          <option value="last7" selected>Last 7 days</option>
+          <option value="last30">Last 30 days</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="metrics-overview">
+      <div class="metric-card total-time">
+        <h3>Total Time</h3>
+        <div class="metric-value" id="total-time-value">--:--</div>
+      </div>
+      <div class="metric-card productivity-score">
+        <h3>Productivity Score</h3>
+        <div class="metric-value" id="productivity-score">--</div>
+      </div>
+      <div class="metric-card time-breakdown">
+        <h3>Time Breakdown</h3>
+        <div class="breakdown-container">
+          <div class="breakdown-item">
+            <span class="label">Productive</span>
+            <span class="value" id="productive-value">--:--</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="label">Neutral</span>
+            <span class="value" id="neutral-value">--:--</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="label">Unproductive</span>
+            <span class="value" id="unproductive-value">--:--</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="charts-container">
+      <section class="chart-section">
+        <h2>Daily Activity</h2>
+        <div class="chart-container">
+          <canvas id="daily-chart"></canvas>
+        </div>
+      </section>
+      
+      <section class="chart-section">
+        <h2>Website Categories</h2>
+        <div class="chart-container">
+          <canvas id="category-chart"></canvas>
+        </div>
+      </section>
+    </div>
+    
+    <section class="top-sites-section">
+      <h2>Top Websites</h2>
+      <div class="top-sites-container" id="top-sites-container">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </section>
+    
+    <section class="weekly-report-section">
+      <h2>Weekly Reports</h2>
+      <div id="weekly-reports-container">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </section>
+  </main>
+  
+  <script src="./chart.min.js"></script>
+</body>
+</html>

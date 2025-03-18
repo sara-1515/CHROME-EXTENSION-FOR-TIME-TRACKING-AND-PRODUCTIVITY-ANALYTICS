@@ -1,0 +1,151 @@
+
+body {
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #4285F4;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.today-summary, .top-sites, .actions {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.progress-container {
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+.productive {
+  background-color: #0F9D58;
+}
+
+.neutral {
+  background-color: #4285F4;
+}
+
+.unproductive {
+  background-color: #DB4437;
+}
+
+#sites-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.site-name {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.site-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.site-time {
+  color: #666;
+}
+
+.category-tag {
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-left: 6px;
+  color: white;
+}
+
+.tag-productive {
+  background-color: #0F9D58;
+}
+
+.tag-unproductive {
+  background-color: #DB4437;
+}
+
+.tag-neutral {
+  background-color: #4285F4;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#dashboard-btn {
+  background-color: #4285F4;
+  color: white;
+}
+
+#settings-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}

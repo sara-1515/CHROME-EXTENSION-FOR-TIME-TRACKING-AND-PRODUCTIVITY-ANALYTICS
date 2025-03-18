@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker Settings</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header>
+    <h1>Productivity Tracker Settings</h1>
+  </header>
+  
+  <main>
+    <section class="settings-section">
+      <h2>Website Categories</h2>
+      <p>Categorize websites to track your productivity. Drag and drop sites between categories.</p>
+      
+      <div class="category-container">
+        <div class="category-column">
+          <h3>Productive Sites</h3>
+          <div class="category-list" id="productive-list" data-category="productive">
+            <!-- Will be populated by JavaScript -->
+          </div>
+          <div class="add-site">
+            <input type="text" id="add-productive-input" placeholder="Add domain (e.g., github.com)">
+            <button id="add-productive-btn">Add</button>
+          </div>
+        </div>
+        
+        <div class="category-column">
+          <h3>Unproductive Sites</h3>
+          <div class="category-list" id="unproductive-list" data-category="unproductive">
+            <!-- Will be populated by JavaScript -->
+          </div>
+          <div class="add-site">
+            <input type="text" id="add-unproductive-input" placeholder="Add domain (e.g., facebook.com)">
+            <button id="add-unproductive-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="settings-section">
+      <h2>Notification Settings</h2>
+      <div class="setting-row">
+        <label for="enable-notifications">
+          <input type="checkbox" id="enable-notifications">
+          Enable productivity notifications
+        </label>
+      </div>
+      <div class="setting-row">
+        <label for="notification-threshold">
+          Send alert when unproductive time exceeds:
+          <select id="notification-threshold">
+            <option value="15">15 minutes</option>
+            <option value="30" selected>30 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">1 hour</option>
+          </select>
+        </label>
+      </div>
+    </section>
+    
+    <section class="settings-section">
+      <h2>Data Management</h2>
+      <div class="setting-row">
+        <button id="export-data-btn" class="secondary-btn">Export Data</button>
+        <button id="clear-data-btn" class="danger-btn">Clear All Data</button>
+      </div>
+    </section>
+  </main>
+  
+  <script src="settings.js"></script>
+</body>
+</html>
